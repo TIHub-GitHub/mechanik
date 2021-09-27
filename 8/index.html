@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sprawdzian</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="block lb" id="kontynenty">
+            <div class="lstcenter center-up">
+                <h1 class="display-4">Kontynenty</h1>
+                <div class="bg-rounded">
+                    <a class="list-group-item list-group-item-action bg">1. <span class="text-primary">Europa</span></a>
+                    <a class="list-group-item list-group-item-action bg">2. <span class="text-primary">Azja</span></a>
+                    <a class="list-group-item list-group-item-action bg">3. <span class="text-primary">Afryka</span></a>
+                    <a class="list-group-item list-group-item-action bg">4. <span class="text-primary">Ameryka Północna</span></a>
+                    <a class="list-group-item list-group-item-action bg">5. <span class="text-primary">Ameryka Południowa</span></a>
+                    <a class="list-group-item list-group-item-action bg">6. <span class="text-primary">Australia</span></a>
+                    <a class="list-group-item list-group-item-action bg">7. <span class="text-primary">Antarktyda</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="block lg dpf aftericon" id="morzaioceany">
+            <h1 class="display-4" style="transform:translate(-10%, 0%);">Morza i oceany</h1>
+                <div class="bg-rounded">
+                    <a class="list-group-item list-group-item-action active bg">1. <span class="text-white">Ocean Spokojny</span> (Pacyfik)</a>
+                    <a class="list-group-item list-group-item-action bg"><span class="text-primary">Morze Beringa</span></a>
+                    <a class="list-group-item list-group-item-action bg"><span class="text-primary">Morze Południowochińskie</span></a>
+                    <a class="list-group-item list-group-item-action bg"><span class="text-primary">Morze Wschodniowochińskie</span></a>
+                    <br>
+                    <a href="https://pl.wikipedia.org/wiki/Ocean_Atlantycki" target="_blank" class="list-group-item list-group-item-action active bg">2. <span class="text-white">Atlantyk</span></a>
+                    
+                    <br>
+                    <a class="list-group-item list-group-item-action active bg">3. <span class="text-white">Ocean Indyjski</span></a>
+                </div>
+        </div>
+        <div class="block lb dpf" id="portaleinternetowe">
+            <h1 class="display-4 blk" style="transform:translate(-10%, 0%);">Portale internetowe</h1>
+            <img src="2.jpg" id="zdjecie" style="cursor:pointer;border-radius:1rem 0rem 0rem 1rem">
+            <div class="bg-rounded">
+                <a href="http://wp.pl/" target="_blank" class="list-group-item list-group-item-action bg">1. <span class="text-primary">Wirtualna Polska</span></a>
+                <a href="http://onet.pl/" target="_blank" class="list-group-item list-group-item-action bg">2. <span class="text-primary">Onet</span></a>
+                <a href="http://google.pl/" target="_blank" class="list-group-item list-group-item-action bg">3. <span class="text-primary">Google</span></a>
+                <a href="http://interia.pl/" target="_blank" class="list-group-item list-group-item-action bg">4. <span class="text-primary">Interia</span></a>
+                <a href="http://facebook.pl/" target="_blank" class="list-group-item list-group-item-action bg">5. <span class="text-primary">Facebook</span></a>
+            </div>
+        </div>
+        <div class="block lg dpf">
+            <div>
+                <h1 class="display-4">Odnośniki</h1>
+                <div class="bg-rounded">
+                    <a href="#kontynenty" class="list-group-item list-group-item-action bg">1. <span class="text-primary">Kontynenty</span></a>
+                    <a href="#morzaioceany" class="list-group-item list-group-item-action bg">2. <span class="text-primary">Morza i oceany</span></a>
+                    <a href="#portaleinternetowe" class="list-group-item list-group-item-action bg">3. <span class="text-primary">Portale internetowe</span></a>
+                    <br>
+                    <a href="mailto:ostryjanekx69@wp.pl" class="list-group-item list-group-item-action bg">4. <span class="text-primary">Kontakt E-Mail</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-dwn">
+            <button type="button" class="btn btn-primary" id="poczatek">Początek strony</button>
+        </div>
+        <div class="btn-cnt">
+            <button type="button" class="btn btn-info" id="kontakt">Kontakt</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

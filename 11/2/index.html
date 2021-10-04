@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tabele</title>
+        <style>
+            table {
+                border: 1px solid black;
+                width: 50%;
+                text-align: center;
+                box-shadow: 0 0 1em purple;
+            }
+            th {
+                border: 1px solid red;
+            }
+            td {
+                border: 1px solid blue;
+            }
+            caption {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0px 0px 10px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellspacing="5px" cellpadding="2px">
+            <caption>Jakaś tabela z czymś czy coś</caption>
+            <thead>
+                <tr>
+                    <th>Nagłówek 1</th>
+                    <th>Nagłówek 2</th>
+                    <th>Nagłówek 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Długa Komórka 1-2</td>
+                    <td>Komórka 3</td>
+                </tr>
+                <tr>
+                    <td>Komórka 1</td>
+                    <td rowspan="2" style="background:url(https://i.imgur.com/Isfx5Am.jpg);width:205px;height:48px;"></td>
+                    <th>Pogrubiona Komórka 3</th>
+                </tr>
+                <tr>
+                    <td>Komórka 1</td>
+                    <td>Komórka 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

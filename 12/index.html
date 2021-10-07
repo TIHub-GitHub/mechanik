@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kolorowanie Tabel</title>
+        <style>
+            table {
+                border: 1px solid black;
+                width: 50%;
+                text-align: center;
+            }
+            th {
+                border: 1px solid black;
+                background-color: darkcyan;
+            }
+            td {
+                background-color: darkgoldenrod;
+                border: 1px solid black;
+            }
+            .bg-cyan {
+                background-color: cyan;
+            }
+            .bg-magenta {
+                background-color: magenta;
+            }
+            .bg-crimson {
+                background-color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellspacing="5px" cellpadding="2px">
+            <thead>
+                <tr>
+                    <th>Nagłówek 1</th>
+                    <th  class="bg-cyan">Nagłówek 2</th>
+                    <th>Nagłówek 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Długa Komórka 1-2</td>
+                    <td>Komórka 3</td>
+                </tr>
+                <tr>
+                    <td class="bg-cyan">Komórka 1</td>
+                    <td class="bg-magenta" rowspan="2">Wysoka Komórka 2</td>
+                    <th>Pogrubiona Komórka 3</th>
+                </tr>
+                <tr>
+                    <td>Komórka 1</td>
+                    <td class="bg-crimson">Komórka 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

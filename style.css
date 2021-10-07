@@ -73,3 +73,6 @@ body {
     bottom: 0;
     right: 0;
 }
+.vh {
+    height: 20vh;
+}

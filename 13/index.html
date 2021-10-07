@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sprawdzian</title>
+        <style>
+            table {
+                border: 1px solid black;
+                width: 50%;
+                text-align: center;
+                background-color: lightblue;
+            }
+            th {
+                border: 1px solid black;
+            }
+            td {
+                border: 1px solid black;
+            }
+            caption {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0px 0px 10px 0px;
+            }
+            hr {
+                margin: 5vh;
+            }
+            .wide-100 {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="wide-100" cellspacing="5px" cellpadding="2px">
+            <caption>Największe jeziora na świecie</caption>
+            <thead>
+                <tr>
+                    <th>Kontynent</th>
+                    <th>Nazwa jeziora</th>
+                    <th>Powierzchnia w km kwadratowych</th>
+                    <th>Państwa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Azja</th>
+                    <td>Morze kaspijskie</td>
+                    <td>371,800</td>
+                    <td>Azerbejdżan, Rosja, Kazachstan, Turkmenistan, Iran</td>
+                    <tr>
+                        <td>Jezioro Bajkał</td>
+                        <td>31,500</td>
+                        <td>Rosja</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <th rowspan="7">Ameryka</th>
+                    <td>Jezioro Górne</td>
+                    <td>82,410</td>
+                    <td>Stany Zjednoczone, Kanada</td>
+                    <tr>
+                        <td>Jezioro Michigan</td>
+                        <td>57,850</td>
+                        <td>Stany Zjednoczone</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Wielkie Niedźwiedzie</td>
+                        <td>31,080</td>
+                        <td>Kanada</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Wielkie Niewolnicze</td>
+                        <td>28,919</td>
+                        <td>Kanada</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Erie</td>
+                        <td>25,612</td>
+                        <td>Stany Zjednoczone, Kanada</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Winnipeg</td>
+                        <td>24,514</td>
+                        <td>Kanada</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Ontario</td>
+                        <td>19,470</td>
+                        <td>Stany Zjednoczone, Kanada</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <th rowspan="3">Afryka</th>
+                    <td>Jezioro Wiktorii</td>
+                    <td>68,800</td>
+                    <td>Tanzania, Uganda, Kenia</td>
+                    <tr>
+                        <td>Jezioro Niasa</td>
+                        <td>30,800</td>
+                        <td>Malawi, Mozambik, Tanzania</td>
+                    </tr>
+                    <tr>
+                        <td>Jezioro Tanganika</td>
+                        <td>32,893</td>
+                        <td>Burundi, Demokratyczna Republika Konga, Tanzania, Zambia</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <th>Europa</th>
+                    <td>Ładoga</td>
+                    <td>17,301</td>
+                    <td>Rosja</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table class="wide-100">
+            <caption>Tabela zagnieżdżona</caption>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>
+                    <table cellspacing="0px" style="background-color: crimson;">
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+    </body>
+</html>

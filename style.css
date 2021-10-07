@@ -67,12 +67,10 @@ body {
 }
 .center-25up {
     top: 25%!important;
+    height: 20vh;
 }
 .bg-bottom-right {
     position: fixed;
     bottom: 0;
     right: 0;
-}
-.vh {
-    height: 20vh;
 }

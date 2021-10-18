@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularze</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div">
+        <form id="formularz" name="formularz" method="POST" action="mailto:ostryjanekx69@wp.pl">
+            <h2>Pole formularza</h2>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adres E-Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="nazwa@domena.pl">
+            </div>
+            <div class="mb-3">
+                <label for="imie" class="form-label">Imię i Nazwisko</label>
+                <input type="text" class="form-control" id="imie" placeholder="Jan Kowalski">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" name="zgoda" id="przetwarzanie" checked>
+                <label class="form-check-label" for="przetwarzanie">Zgadzam się na przetwarzanie danych osobowych</label>
+            </div>
+            <div class="mgtop-15">
+                <label class="form-check-label" style="font-weight:600;font-size:24px;" for="wyksztalcenie">Wykształcenie</label>
+                <label><input name="wyksztalcenie" class="form-check-input" type="radio" value="Podstawowe" id="wyksztalcenie-1"> Podstawowe</label>
+                <label><input name="wyksztalcenie" class="form-check-input" type="radio" value="Średnie" id="wyksztalcenie-2"> Średnie</label>
+                <label><input name="wyksztalcenie" class="form-check-input" type="radio" value="Wyższe" id="wyksztalcenie-3"> Wyższe</label>
+            </div>
+            <div class="mgtop-15">
+                <label class="form-check-label" style="font-weight:600;font-size:24px;" for="zainteresowania">Zainteresowania</label>
+                <label><input name="zainteresowania" class="form-check-input" type="checkbox" value="Gry" id="zainteresowania-1"> Gry</label>
+                <label><input name="zainteresowania" class="form-check-input" type="checkbox" value="Komputer" id="zainteresowania-2"> Komputer</label>
+                <label><input name="zainteresowania" class="form-check-input" type="checkbox" value="Granie na Komputerze" id="zainteresowania-3"> Granie na Komputerze</label>
+            </div>
+            <div class="mgtop-15">
+                <button type="submit" name="Wyślij" class="btn btn-success mgtop-15" id="submit">Wyślij</button>
+                <button type="reset" name="Wyczyść" class="btn btn-success mgtop-15" id="reset">Wyczyść</button>
+            </div>
+        </form>
+        <hr>
+        <form enctype="multipart/form-data" name="formularz-2" method="POST" action="mailto:ostryjanekx69@wp.pl">
+            <h2>Pole formularza 2</h2>
+            <input class="mgtop-15" type="file" name="plik" size="30">
+            <br>
+            <div class="mgtop-15">
+                <button type="submit" name="Wyślij" class="btn btn-success mgtop-15" id="submit">Wyślij</button>
+                <button type="reset" name="Wyczyść" class="btn btn-success mgtop-15" id="reset">Wyczyść</button>
+            </div>
+        </form>
+        <hr>
+        <form name="formularz-3" method="POST" action="mailto:ostryjanekx69@wp.pl">
+            <h2>Pole formularza 3</h2>
+            <div class="mb-3">
+                <label for="haslo" class="form-label">Hasło</label>
+                <input type="password" class="form-control" id="haslo" placeholder="Wprowadź hasło">
+                <div class="mgtop-10">
+                    <input type="submit" name="wyslij" value="Wyślij">
+                    <input type="reset" name="wyczysc" value="Wyczyść">
+                    <input type="button" name="akcja" value="Akcja">
+                </div>
+                <div class="mgtop-10">
+                    <button type="submit" name="przycisk_1" value="Wyślij">Wyślij</button>
+                    <button type="reset" name="przycisk_2" value="Wyczyść">Wyczyść</button>
+                    <button type="button" name="przycisk_3" value="Akcja">Powrót</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -12,14 +12,30 @@ form {
     border: 1px solid black;
 }
 
+textarea {
+    margin-bottom: 25px;
+}
+
 hr {
     margin: 40px 0px 40px 0px
 }
 
 .object {
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 .no-overflow {
     overflow: hidden;
+}
+
+.mgtop-5 {
+    margin-top: 5px;
+}
+
+.mgtop-10 {
+    margin-top: 10px;
+}
+
+.mgtop-15 {
+    margin-top: 15px;
 }

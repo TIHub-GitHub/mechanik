@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="parent">
+        <form action="" method="POST" name="form1" id="form1">
+            <fieldset>
+                <legend>Pola select jednokrotnego wyboru</legend>
+                <div class="object">
+                    <label for="jezyki">Języki</label>
+                    <select class="form-select form-select" name="jezyki" id="jezyki">
+                        <option value="angielski">angielski</option>
+                        <option value="niemiecki">niemiecki</option>
+                        <option value="francuski">francuski</option>
+                        <option value="hiszpański">hiszpański</option>
+                        <option value="włoski">włoski</option>
+                    </select>
+                </div>
+                <div class="object">
+                    <label for="jezyki_2">Języki 2</label>
+                    <select class="form-select form-select" name="jezyki_2" id="jezyki_2">
+                        <option value="angielski">angielski</option>
+                        <option value="niemiecki">niemiecki</option>
+                        <option value="francuski">francuski</option>
+                        <option value="hiszpański">hiszpański</option>
+                        <option value="włoski">włoski</option>
+                    </select>
+                </div>
+                <div class="object">
+                    <label for="jezyki_3">Języki 3</label>
+                    <select class="form-select form-select no-overflow" size="5" name="jezyki_3" id="jezyki_3">
+                        <option value="angielski">angielski</option>
+                        <option value="niemiecki">niemiecki</option>
+                        <option value="francuski">francuski</option>
+                        <option value="hiszpański">hiszpański</option>
+                        <option value="włoski">włoski</option>
+                    </select>
+                </div>
+                <hr>
+                <legend>Pola select wielokrotnego wyboru</legend>
+                <div class="object">
+                    <label for="jezyki_4">Języki 4</label>
+                    <select class="form-select form-select no-overflow" size="5" multiple name="jezyki_4" id="jezyki_4">
+                        <option value="angielski">angielski</option>
+                        <option value="niemiecki">niemiecki</option>
+                        <option value="francuski">francuski</option>
+                        <option value="hiszpański">hiszpański</option>
+                        <option selected="selected" value="włoski">włoski</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="object">
+                    <label for="jezyki_5">Języki 5 - Select zagnieżdżone</label>
+                    <select class="form-select form-select no-overflow" size="13" multiple name="jezyki_5"
+                        id="jezyki_5">
+                        <optgroup label="Języki słowiańskie">
+                            <option value="polski" selected>polski</option>
+                            <option value="rosyjski">rosyjski</option>
+                            <option value="czeski">czeski</option>
+                            <option value="ukraiński">ukraiński</option>
+                        </optgroup>
+                        <optgroup label="Języki germańskie">
+                            <option value="angielski">angielski</option>
+                            <option value="niemiecki">niemiecki</option>
+                            <option value="szwedzki">szwedzki</option>
+                        </optgroup>
+                        <optgroup label="Języki romańskie">
+                            <option value="francuski">francuski</option>
+                            <option value="hiszpański">hiszpański</option>
+                            <option value="włoski">włoski</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

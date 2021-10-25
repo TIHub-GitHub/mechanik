@@ -1,0 +1,25 @@
+#parent {
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    margin: 5vh auto;
+}
+
+form {
+    padding: 20px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+hr {
+    margin: 40px 0px 40px 0px
+}
+
+.object {
+    margin: 10px 0px 10px 0px;
+}
+
+.no-overflow {
+    overflow: hidden;
+}

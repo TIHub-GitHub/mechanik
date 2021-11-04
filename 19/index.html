@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprawdzian - Formularze</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div">
+        <form id="formularz" name="formularz" method="POST" action="mailto:ostryjanekx69@wp.pl">
+            <fieldset>
+                <h2>Dane osobowe</h2>
+                <div class="mb-3">
+                    <label for="imieinazwisko" class="form-label">Imię i Nazwisko</label>
+                    <input type="text" class="form-control" name="imieinazwisko" id="imieinazwisko"
+                        placeholder="Jan Kowalski" value="" onkeyup="duzeLitery()" autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <label for="data" class="form-label">Data urodzenia</label>
+                    <input type="date" class="form-control" name="data" id="data" max="2021-11-04" value=""
+                        autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <label for="adres" class="form-label">Adres</label>
+                    <input type="text" class="form-control" name="adres" id="adres" placeholder="ul. Ulica 1" value=""
+                        autocomplete="off" required>
+                </div>
+                <div class="mb-3">
+                    <label for="zdjecie" class="form-label">Wyślij swoje zdjęcie</label>
+                    <input type="file" class="form-control" name="zdjecie" id="zdjecie" placeholder="ul. Ulica 1"
+                        value="" autocomplete="off" required>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <h2>Dane osobowe 2</h2>
+                <div class="mgtop-15">
+                    <label class="form-check-label" for="plec">Podaj swoją
+                        płeć</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="Kobieta" id="plec-1">
+                        Kobieta</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="Mężczyzna" id="plec-2">
+                        Mężczyzna</label>
+                    <label><input name="plec" class="form-check-input" type="radio"
+                            value="Śmigłowiec Szturmowy AH-64 Apache" id="plec-3">
+                        Śmigłowiec Szturmowy AH-64 Apache</label>
+                </div>
+                <div class="mgtop-15">
+                    <label class="form-check-label" for="plec">Ile masz lat?</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="mniej niż 15" id="wiek-1">
+                        mniej niż 15</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="15-19" id="wiek-2">
+                        15-19</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="20-29" id="wiek-3">
+                        20-29</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="30-39" id="wiek-4">
+                        30-39</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="40-60" id="wiek-5">
+                        40-60</label>
+                    <label><input name="plec" class="form-check-input" type="radio" value="więcej niż 60" id="wiek-6">
+                        więcej niż 60</label>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <h2>Zainteresowania</h2>
+                <span class="text-muted">(Możesz zaznaczyć więcej niż jedno pole)</span>
+                <label class="form-check-label" for="plec">Jaką lubisz muzykę?</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Rock"> Rock</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Heavy Metal"> Heavy
+                    Metal</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Pop"> Pop</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Techno"> Techno</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Muzyka poważna"> Muzyka
+                    poważna</label>
+                <label><input name="zaint" class="form-check-input" type="checkbox" value="Inna (podaj jaka):"> Inna
+                    (podaj jaka): <input type="text" name="zaint"></label>
+                <div class="mgtop-15">
+                    <label for="co_lubisz">Co lubisz?</label>
+                    <select class="form-select form-select no-overflow" size="4" multiple name="co_lubisz">
+                        <option value="Książki">Książki</option>
+                        <option value="Gry komputerowe">Gry komputerowe</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Substancje psychoaktywne">Substancje psychoaktywne</option>
+                    </select>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <h2>Informacje z zakresu informatyki</h2>
+                <div class="mgtop-15">
+                    <label for="przeg">Jakiej przeglądarki używasz?</label>
+                    <select name="przeg">
+                        <option value="Google Chrome" label="Google Chrome"></option>
+                        <option value="Microsoft Edge" label="Microsoft Edge"></option>
+                        <option value="Mozilla Firefox" label="Mozilla Firefox"></option>
+                        <option value="Internet Explorer" label="Internet Explorer" selected></option>
+                        <option value="Żadne z powyższych" label="Żadne z powyższych"></option>
+                    </select>
+                </div>
+                <div class="mgtop-15">
+                    <label for="progr">Jakie znasz programy komputerowe? <span class="text-muted">(możesz wybrać kilka
+                            opcji trzymając klawisz
+                            CTRL)</span></label>
+                    <select class="form-select form-select no-overflow" size="13" multiple name="progr">
+                        <optgroup label="Systemy operacyjne">
+                            <option value="Windows" selected>Windows</option>
+                            <option value="Linux">Linux</option>
+                            <option value="Android">Android</option>
+                            <option value="MAC OS">MAC OS</option>
+                        </optgroup>
+                        <optgroup label="Programy graficzna">
+                            <option value="Adobe Photoshop">Adobe Photoshop</option>
+                            <option value="Corel">Corel</option>
+                            <option value="GIMP">GIMP</option>
+                        </optgroup>
+                        <optgroup label="Języki programowania">
+                            <option value="Python">Python</option>
+                            <option value="Snake">Snake</option>
+                            <option value="Kartka papieru">Kartka papieru</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="mgtop-25">
+                    <p style="margin-bottom:0">Jak myślisz - za ile lat powstaną inteligentne, myślące maszyny?</p>
+                    <div style="width:100%!important;text-align:center">
+                        <input type="range" step="2" class="form-range" value="100" min="0" max="200"
+                            oninput="this.nextElementSibling.innerText = this.value">
+                        <h2>100</h2>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <h2>Języki</h2>
+                <div class="mgtop-15">
+                    <label for="jzyk">Podaj język, w jakim chcesz otrzymywać materiały</label>
+                    <select name="jzyk">
+                        <option value="Polski" label="Polski" selected></option>
+                        <option value="Angielski" label="Angielski"></option>
+                        <option value="Niemiecki" label="Niemiecki"></option>
+                        <option value="Rosyjski" label="Rosyjski"></option>
+                    </select>
+                </div>
+                <div class="mgtop-15">
+                    <label for="ZainLST">Podaj, jaki znasz język obcy? <span class="text-muted">(możesz wybrać z listy
+                            lub
+                            wprowadzić własny)</span></label>
+                    <input type="text" name="ZainLST" id="ZainLST" list="Zain">
+                    <datalist id="Zain">
+                        <select name="Zain">
+                            <option value="Angielski" label="Angielski"></option>
+                            <option value="Niemiecki" label="Niemiecki"></option>
+                            <option value="Rosyjski" label="Rosyjski"></option>
+                        </select>
+                    </datalist>
+                </div>
+            </fieldset>
+            <hr>
+            <textarea id="textarea" class="form-control" rows="3" placeholder="Wpisz tu jakiś komentarz..."></textarea>
+            <hr>
+            <span>Podaj początek obecnego roku szkolnego (rok i miesiąc) <input id="rokszkolny-1" type="text"
+                    style="width:60px"> <input id="rokszkolny-2" type="text" style="width:40px"> i koniec (rok i
+                miesiąc) <input id="rokszkolny-3" type="text" style="width:60px">
+                <input id="rokszkolny-4" type="text" style="width:40px"></span>
+            <div class="mgtop-15">
+                <button type="submit" name="Wyślij" class="btn btn-success mgtop-15" id="submit">Wyślij</button>
+                <button type="reset" name="Wyczyść" class="btn btn-success mgtop-15" id="reset">Wyczyść</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

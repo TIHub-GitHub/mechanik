@@ -1,0 +1,50 @@
+.div {
+    margin: 5vh 7.5vh 5vh 7.5vh;
+}
+
+label {
+    display: block;
+}
+
+.ib {
+    display: inline-block !important;
+}
+
+.mgtop-10 {
+    margin-top: 10px;
+}
+
+.mgtop-15 {
+    margin-top: 15px;
+}
+
+.mgtop-20 {
+    margin-top: 20px;
+}
+
+.mgtop-25 {
+    margin-top: 25px;
+}
+
+button {
+    margin: 5px;
+}
+
+hr {
+    margin: 40px 0px 40px 0px
+}
+
+form {
+    padding: 20px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.none {
+    display: none;
+}
+
+.no-overflow {
+    overflow: hidden;
+}

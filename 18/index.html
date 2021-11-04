@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularze - Pola z dodatkowym wyborem</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div">
+        <form action="" method="post" name="formularz_1">
+            <h2>Zainteresowania (możesz zaznaczyć więcej niż jedno pole)</h2>
+            <p>Jaką lubisz muzykę?</p>
+            <fieldset>
+                <legend>Zainteresowania</legend>
+                <div><input type="checkbox" name="Muzyka" value="Rock">Rock</div>
+                <div><input type="checkbox" name="Muzyka" value="Heavy Metal">Heavy Metal</div>
+                <div><input type="checkbox" name="Muzyka" value="Pop">Pop</div>
+                <div><input type="checkbox" name="Muzyka" value="Techno">Techno</div>
+                <div><input type="checkbox" name="Muzyka" value="Poważna">Muzyka poważna</div>
+                <div><input type="checkbox" name="Muzyka" value="Inna">Inna (podaj jaka): <input type="text"
+                        name="Muzyka">
+                </div>
+            </fieldset>
+            <hr>
+            <p>Zainteresowania 2</p>
+            <select name="Zain2">
+                <option value="Rock" label="Rock"></option>
+                <option value="Heavy Metal" label="Heavy Metal"></option>
+                <option value="Pop" label="Pop"></option>
+                <option value="Techno" label="Techno"></option>
+                <option value="Muzyka poważna" label="Muzyka poważna"></option>
+            </select>
+            <hr>
+            <p>Zainteresowania 3</p>
+            <input type="text" name="Zainteresowania" id="Zainteresowania" list="Zain">
+            <datalist id="Zain">
+                <select name="Zain">
+                    <option value="Rock" label="Rock"></option>
+                    <option value="Heavy Metal" label="Heavy Metal"></option>
+                    <option value="Pop" label="Pop"></option>
+                    <option value="Techno" label="Techno"></option>
+                    <option value="Muzyka poważna" label="Muzyka poważna"></option>
+                </select>
+            </datalist>
+        </form>
+    </div>
+</body>
+
+</html>

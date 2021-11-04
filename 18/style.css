@@ -1,0 +1,18 @@
+form {
+    padding: 20px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.div {
+    margin: 5vh 7.5vh 5vh 7.5vh;
+}
+
+hr {
+    margin: 25px 0px 25px 0px
+}
+
+input {
+    margin-right: 5px;
+}

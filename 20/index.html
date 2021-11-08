@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Znaczniki Embed: Video i Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video class="video-fullscreen" autoplay muted loop>
+        <source src="src/ye.mp4" type="video/mp4">
+        <source src="src/ye.mov" type="video/mp4">
+        Twoja przeglądarka nie wspiera znacznika video.
+    </video>
+    <video width="320" height="240" controls>
+        <source src="src/ye.mp4" type="video/mp4">
+        <source src="src/ye.mov" type="video/mp4">
+        Twoja przeglądarka nie wspiera znacznika video.
+    </video>
+    <video style="position:absolute;right:0" width="320" height="240" autoplay muted>
+        <source src="src/ye.mp4" type="video/mp4">
+        <source src="src/ye.mov" type="video/mp4">
+        Twoja przeglądarka nie wspiera znacznika video.
+    </video>
+    <div>
+        <div style="display:inline-block;margin-top:10vh;position:absolute;left:2rem">
+            <p>Nokia</p>
+            <audio controls>
+                <source src="src/nokia.mp3" type="audio/mpeg">
+                <source src="src/nokia.ogg" type="audio/ogg">
+                Twoja przeglądarka nie wspiera znacznika audio.
+            </audio>
+        </div>
+        <div style="display:inline-block;margin-top:10vh;position:absolute;right:2rem">
+            <p>Microwave</p>
+            <audio controls>
+                <source src="src/microwave.mp3" type="audio/mpeg">
+                <source src="src/microwave.ogg" type="audio/ogg">
+                Twoja przeglądarka nie wspiera znacznika audio.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

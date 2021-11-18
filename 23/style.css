@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    padding: 0.75rem;
+}
+
+p {
+    color: salmon;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+th {
+    background-color: seagreen;
+}
+
+#tab_2 th {
+    background-color: steelblue;
+}
+
+.lacze {
+    color: magenta;
+}
+
+#tab_2 tr .lacze {
+    color: darkolivegreen;
+}
+
+a {
+    color: limegreen;
+}
+
+#tab_1 tr td a {
+    color: mediumblue;
+    text-decoration: none;
+}

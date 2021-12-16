@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sprawdzian</title>
+    <style>
+      .center {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+      table {
+        width: 80%;
+        text-align: center;
+      }
+      th {
+        border: 1px solid red;
+      }
+      td {
+        padding: 7.5px;
+        border-top: 7.5px solid gray;
+        border-left: 7.5px solid gray;
+        border-bottom: 7.5px solid lightcoral;
+        border-right: 7.5px solid lightcoral;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      td:hover {
+        padding: 10.5px;
+        border-top: 4.5px solid lightcoral;
+        border-left: 4.5px solid lightcoral;
+        border-bottom: 4.5px solid gray;
+        border-right: 4.5px solid gray;
+        background: #ccccd9;
+      }
+      .td:active {
+        animation: background 2s infinite;
+        border-top: 4.5px solid gray;
+        border-left: 4.5px solid gray;
+        border-bottom: 4.5px solid lightcoral;
+        border-right: 4.5px solid lightcoral;
+      }
+      td.papiez:active {
+        background: url(jp2.jpg);
+        animation: color 2s infinite;
+        border-top: 4.5px solid gray;
+        border-left: 4.5px solid gray;
+        border-bottom: 4.5px solid lightcoral;
+        border-right: 4.5px solid lightcoral;
+      }
+      @keyframes background {
+        0% {
+          background: #f12711;
+        }
+        45%,
+        55% {
+          background: #f5af19;
+        }
+        100% {
+          background: #f12711;
+        }
+      }
+      @keyframes color {
+        0% {
+          color: #f12711;
+        }
+        45%,
+        55% {
+          color: #f5af19;
+        }
+        100% {
+          color: #f12711;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <table cellspacing="5px" cellpadding="2px">
+        <tbody>
+          <tr>
+            <td class="td">Komórka 1</td>
+            <td class="papiez">Komórka 2</td>
+            <td class="td">Komórka 3</td>
+          </tr>
+          <tr>
+            <td class="td">Komórka 1</td>
+            <td class="papiez">Komórka 2</td>
+            <td class="td">Komórka 3</td>
+          </tr>
+          <tr>
+            <td class="td">Komórka 1</td>
+            <td class="papiez">Komórka 2</td>
+            <td class="td">Komórka 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
